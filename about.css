@@ -54,7 +54,7 @@ nav a.active {
         linear-gradient(
             rgba(0, 0, 0, 0.55),
             rgba(0, 0, 0, 0.55) ),
-        url("../project1images/tnimg.png");
+        url("project1images/tnimg.png");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -248,7 +248,7 @@ nav a.active {
             rgba(0, 0, 0, 0.65),
             rgba(0, 0, 0, 0.65)
         ),
-        url("../project1images/tnimg.png");
+        url("project1images/tnimg.png");
 
     background-size: cover;
     background-position:bottom;

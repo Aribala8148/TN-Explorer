@@ -116,7 +116,7 @@ nav a.active {
             rgba(0, 0, 0, 0.45),
             rgba(0, 0, 0, 0.55)
         ),
-        url("../project1images/primg2.png");
+        url("project1images/primg2.png");
 
     background-size: cover;
 
@@ -256,39 +256,39 @@ nav a.active {
 /* ---------- DESTINATION IMAGES ---------- */
 
 .chennai {
-    background-image: url("../project1images/prchenn.png");
+    background-image: url("project1images/prchenn.png");
 }
 
 .madurai {
-    background-image: url("../project1images/prmadur.png");
+    background-image: url("project1images/prmadur.png");
 }
 
 .ooty {
-    background-image: url("../project1images/prooty.png");
+    background-image: url("project1images/prooty.png");
 }
 
 .kodaikanal {
-    background-image: url("../project1images/prkodai.png");
+    background-image: url("project1images/prkodai.png");
 }
 
 .kanyakumari {
-    background-image: url("../project1images/prkanya.png");
+    background-image: url("project1images/prkanya.png");
 }
 
 .rameswaram {
-    background-image: url("../project1images/prrameshwaram.jpg");
+    background-image: url("project1images/prrameshwaram.jpg");
 }
 
 .thanjavur {
-    background-image: url("../project1images/prthanajavur.jpg");
+    background-image: url("project1images/prthanajavur.jpg");
 }
 
 .mamallapuram {
-    background-image: url("../project1images/prmamalla.jpg");
+    background-image: url("project1images/prmamalla.jpg");
 }
 
 .tirunelveli {
-    background-image: url("../project1images/prtiru.jpg");
+    background-image: url("project1images/prtiru.jpg");
 }
 
 
@@ -405,7 +405,7 @@ nav a.active {
             rgba(0, 0, 0, 0.6),
             rgba(0, 0, 0, 0.6)
         ),
-        url("../project1images/primg2.png");
+        url("project1images/primg2.png");
 
     background-size: cover;
 

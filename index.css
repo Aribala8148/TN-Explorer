@@ -244,29 +244,6 @@ nav a.active {
 .learn-btn:hover {
     background: #c92f3c;
 }
-/* 
-     Animation
-.animation{
-    background: linear-gradient(rgb(223, 198, 200));
-    animation-name: image;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    position: relative;
-
-}
- .animation img{
-    height: 300px;
-    width: 300px;
-
- }   
- @keyframes image{
-    100%{
-        transform:transulatex(360deg);
-         transition:transform 0.5s;
-  
-    }
- } 
- */
 
 /* ---------- CATEGORIES ---------- */
 
