@@ -1,0 +1,744 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+
+
+/* ---------- HEADER ---------- */
+
+header {
+    width: 100%;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 50px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #e63946;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+nav a.active {
+    color: #e63946;
+}
+
+
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    padding: 9px 17px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.login-btn {
+    color: #e63946;
+    border: 1px solid #e63946;
+}
+
+.login-btn:hover {
+    background: #e63946;
+    color: white;
+}
+
+.register-btn {
+    background: #e63946;
+    color: white;
+}
+
+.register-btn:hover {
+    background: #c92f3c;
+}
+
+
+/* ---------- HERO ---------- */
+
+.package-hero {
+    height: 430px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("../project1images/prchenn.png");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+}
+
+.hero-content p {
+    font-size: 18px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    line-height: 1.1;
+
+    margin-bottom: 18px;
+}
+
+.hero-content span {
+    font-size: 18px;
+}
+
+
+/* ---------- INTRO ---------- */
+
+.intro {
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: 60px auto 40px;
+
+    padding: 0 20px;
+}
+
+.intro h2 {
+    color: #e63946;
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+.intro p {
+    color: #666;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* ---------- PACKAGES ---------- */
+
+.packages {
+    width: 90%;
+    max-width: 1150px;
+
+    margin: 0 auto 70px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+/* ---------- PACKAGE CARD ---------- */
+
+.package-card {
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+.package-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.16);
+}
+
+
+
+.package-image span {
+    background: #e63946;
+
+    color: white;
+
+    padding: 8px 12px;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* ---------- PACKAGE CONTENT ---------- */
+
+.package-content {
+    padding: 25px;
+}
+
+.package-content h2 {
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+.duration {
+    color: #e63946;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.package-content > p:not(.duration) {
+    color: #666;
+
+    line-height: 1.6;
+
+    margin-bottom: 18px;
+}
+
+.package-content h3 {
+    font-size: 16px;
+
+    margin-bottom: 10px;
+}
+
+
+/* ---------- LIST ---------- */
+
+.package-content ul {
+    padding-left: 20px;
+
+    margin-bottom: 22px;
+}
+
+.package-content li {
+    color: #666;
+
+    margin-bottom: 7px;
+}
+
+
+/* ---------- PRICE & BOOK BUTTON ---------- */
+
+.package-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-top: 1px solid #eee;
+
+    padding-top: 18px;
+}
+
+.price {
+    color: #e63946;
+
+    font-size: 23px;
+
+    font-weight: bold;
+}
+
+.price small {
+    color: #777;
+
+    font-size: 12px;
+
+    font-weight: normal;
+}
+
+.package-bottom a {
+    background: #e63946;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 11px 16px;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.package-bottom a:hover {
+    background: #c92f3c;
+}
+
+
+/* ---------- WHY CHOOSE US ---------- */
+
+.why-section {
+    background: white;
+
+    padding: 65px 20px;
+
+    text-align: center;
+}
+
+.why-section > h2 {
+    color: #e63946;
+
+    font-size: 30px;
+
+    margin-bottom: 35px;
+}
+
+.why-container {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.why-box {
+    padding: 30px 20px;
+
+    background: #f8f8f8;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.why-box:hover {
+    transform: translateY(-6px);
+}
+
+.why-box > div {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.why-box h3 {
+    margin-bottom: 10px;
+}
+
+.why-box p {
+    color: #666;
+
+    line-height: 1.5;
+}
+
+
+/* ---------- CTA ---------- */
+
+.cta {
+    padding: 75px 20px;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url("../project1images/prtiru.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.cta h2 {
+    font-size: 32px;
+
+    margin-bottom: 15px;
+}
+
+.cta p {
+    font-size: 17px;
+
+    margin-bottom: 25px;
+}
+
+.cta a {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background: #e63946;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+}
+
+.cta a:hover {
+    background: #c92f3c;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 20px;
+}
+
+.footer-logo {
+    font-size: 22px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: white;
+
+    text-decoration: none;
+
+    margin: 0 12px;
+}
+
+.footer-links a:hover {
+    color: #e63946;
+}
+
+footer p {
+    color: #aaa;
+
+    font-size: 14px;
+}
+
+
+@media (max-width: 575.99px) {
+
+    header {
+        flex-direction: column;
+        padding: 18px 15px;
+        gap: 18px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    /* Package Hero */
+    .package-hero {
+        height: 220px;
+        padding: 20px;
+    }
+
+    .package-hero h1 {
+        font-size: 28px;
+    }
+
+    .package-hero p {
+        font-size: 15px;
+    }
+
+    /* Package Section */
+    .package-section {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .package-section h2 {
+        font-size: 25px;
+    }
+
+    /* Package Container */
+    .package-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .why-container{
+        grid-template-columns: 1fr;
+    }
+
+    /* Package Card */
+    .packages{
+grid-template-columns:1fr;
+    }
+    .package-card {
+        width: 100%;
+    }
+
+    .package-card img {
+        height: 220px;
+    }
+
+    .package-card-content {
+        padding: 20px;
+    }
+
+    .package-card h3 {
+        font-size: 19px;
+    }
+
+    .package-card p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .package-price {
+        font-size: 20px;
+    }
+
+    .package-card a,
+    .package-card button {
+        width: 100%;
+        text-align: center;
+        padding: 11px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 25px 15px;
+    }
+
+    .footer-links a {
+        display: inline-block;
+        margin: 5px 7px;
+        font-size: 14px;
+    }
+
+    .footer-logo {
+        font-size: 20px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+
+    header {
+        flex-direction: column;
+        padding: 18px 25px;
+        gap: 18px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    /* Package Hero */
+     .packages{
+grid-template-columns:2fr;
+    }
+    .package-hero {
+        height: 250px;
+        padding: 20px;
+    }
+
+    .package-hero h1 {
+        font-size: 30px;
+    }
+
+    /* Package Section */
+    .package-section {
+        width: 90%;
+        margin: 45px auto;
+    }
+
+    .package-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .package-card img {
+        height: 200px;
+    }
+
+    .package-card-content {
+        padding: 20px;
+    }
+
+    .package-card h3 {
+        font-size: 18px;
+    }
+
+    /* Footer */
+    .footer-links a {
+        margin: 5px 8px;
+        display: inline-block;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+
+    header {
+        padding: 20px 30px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    /* Package Section */
+    .package-section {
+        width: 90%;
+    }
+
+    .package-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .package-card img {
+        height: 220px;
+    }
+
+    .package-card-content {
+        padding: 25px;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    header {
+        padding: 20px 40px;
+    }
+
+    nav {
+        gap: 22px;
+    }
+
+    .package-section {
+        width: 90%;
+        max-width: 1000px;
+    }
+
+    .package-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .package-card img {
+        height: 210px;
+    }
+
+    .package-card-content {
+        padding: 25px 20px;
+    }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+    header {
+        padding: 20px 70px;
+    }
+
+    nav {
+        gap: 30px;
+    }
+
+    .package-section {
+        width: 90%;
+        max-width: 1100px;
+    }
+
+    .package-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .package-card img {
+        height: 230px;
+    }
+
+    .package-card-content {
+        padding: 25px;
+    }
+}

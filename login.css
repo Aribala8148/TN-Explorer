@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../project1images/bgimgkk.png");
+    color: white;
+    font-weight: bold;
+}
+
+.login-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.login-box {
+    width: 430px;
+    padding: 40px;
+    background:transparent;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+}
+
+.login-box h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.login-box h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color:aquamarine;
+    margin-bottom: 30px;
+}
+
+
+/* INPUT FIELDS */
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #e63946;
+}
+
+
+/* REMEMBER ME + FORGOT PASSWORD */
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 19px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.login-options a {
+    color: #14ee05;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+.login-box button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #cd101f;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: #c92f3c;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.register-link a {
+    color: #14ee05;
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration: none;
+}
+@media (max-width: 575.99px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .login-container {
+        min-height: 100vh;
+        padding: 15px;
+    }
+
+    .login-box {
+        width: 100%;
+        padding: 28px 20px;
+        border-radius: 15px;
+    }
+
+    .login-box h1 {
+        font-size: 21px;
+        margin-bottom: 20px;
+    }
+
+    .login-box h2 {
+        font-size: 23px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .input-group {
+        margin-bottom: 16px;
+    }
+
+    .input-group label {
+        font-size: 14px;
+    }
+
+    .input-group input {
+        padding: 11px;
+        font-size: 14px;
+    }
+
+    .login-options {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .remember {
+        gap: 5px;
+    }
+
+    .login-box button {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .register-link {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .login-container {
+        padding: 20px;
+    }
+
+    .login-box {
+        width: 430px;
+        max-width: 100%;
+        padding: 30px;
+    }
+
+    .login-box h1 {
+        font-size: 23px;
+    }
+
+    .login-box h2 {
+        font-size: 25px;
+    }
+
+    .input-group input {
+        padding: 12px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+
+    .login-container {
+        padding: 25px;
+    }
+
+    .login-box {
+        width: 430px;
+        padding: 35px;
+    }
+
+    .login-box h1 {
+        font-size: 24px;
+    }
+
+    .login-box h2 {
+        font-size: 26px;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .login-container {
+        padding: 30px;
+    }
+
+    .login-box {
+        width: 430px;
+        padding: 40px;
+    }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+    .login-box {
+        width: 430px;
+        padding: 40px;
+    }
+}
